@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#081a33">
+  <title>মৌলভী মোঃ মিছির আলী স্মৃতি ফুটবল টুর্নামেন্ট ২০২৬</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home"><img src="assets/tournament-logo.jpg" alt="টুর্নামেন্ট লোগো"><span><b>MSC</b><small>FOOTBALL TOURNAMENT 2026</small></span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="মেনু">☰</button>
+  <nav id="nav">
+    <a href="#home">হোম</a><a href="#groups">গ্রুপ</a><a href="#fixtures">ফিক্সচার</a><a href="#knockout">নকআউট</a><a href="#admin">অ্যাডমিন</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-shade"></div>
+  <div class="hero-content">
+    <div class="eyebrow"><span></span> SEASON 01 · 2026 <span></span></div>
+    <img class="hero-logo" src="assets/tournament-logo.jpg" alt="মৌলভী মোঃ মিছির আলী স্মৃতি ফুটবল টুর্নামেন্ট লোগো">
+    <p class="hero-kicker">মির্জানগর স্পোর্টিং ক্লাব উপস্থাপিত</p>
+    <h1>মৌলভী মোঃ মিছির আলী<br><em>স্মৃতি ফুটবল টুর্নামেন্ট</em></h1>
+    <div class="year">২০২৬</div>
+    <p class="hero-sub">৩২ দল <i>•</i> ৮ গ্রুপ <i>•</i> ১ চ্যাম্পিয়ন</p>
+    <a class="gold-btn" href="#groups">টুর্নামেন্ট দেখুন <span>↘</span></a>
+  </div>
+  <div class="hero-bottom"><span>ORGANIZED BY MIRZANAGAR SPORTING CLUB</span><span>THE ROAD TO THE FINAL</span></div>
+</section>
+
+<section class="sponsors wrap">
+  <div class="sponsor"><img src="assets/club-logo.jpg" alt="মির্জানগর স্পোর্টিং ক্লাব"><div><small>আয়োজনে</small><b>মির্জানগর স্পোর্টিং ক্লাব</b></div></div>
+  <div class="sponsor"><img src="assets/library-logo.jpg" alt="ইসলামী পাঠাগার ও সমাজ কল্যাণ পরিষদ"><div><small>সৌজন্যে</small><b>মৌলভী মো: মিছির আলী ইসলামী পাঠাগার ও সমাজ কল্যাণ পরিষদ</b></div></div>
+</section>
+
+<section class="stats wrap">
+  <div><strong>৩২</strong><span>অংশগ্রহণকারী দল</span></div><div><strong>০৮</strong><span>গ্রুপ</span></div><div><strong>১৬</strong><span>নকআউট দল</span></div><div><strong>০১</strong><span>চ্যাম্পিয়ন</span></div>
+</section>
+
+<section class="section wrap" id="groups">
+  <div class="section-head"><div><span class="tag">GROUP STAGE</span><h2>গ্রুপ পর্ব</h2><p>৮টি গ্রুপে ৩২টি দল — প্রতিটি গ্রুপে ৪টি দল</p></div><div class="select-wrap"><label for="groupSelect">গ্রুপ নির্বাচন</label><select id="groupSelect"></select></div></div>
+  <div class="group-layout"><div class="group-card"><div class="group-title"><span id="groupName">GROUP A</span><small>পয়েন্ট টেবিল</small></div><div class="table-scroll"><table><thead><tr><th>দল</th><th>খেলা</th><th>জয়</th><th>ড্র</th><th>হার</th><th>গোল</th><th>পয়েন্ট</th></tr></thead><tbody id="groupTable"></tbody></table></div></div>
+  <div class="group-note"><div class="note-ball">⚽</div><h3>প্রতিটি ম্যাচই গুরুত্বপূর্ণ</h3><p>গ্রুপের শীর্ষ দুই দল জায়গা করে নেবে রাউন্ড অব ১৬-তে।</p><span>GROUP A — H</span></div></div>
+</section>
+
+<section class="section dark-section" id="fixtures"><div class="wrap">
+  <div class="section-head"><div><span class="tag">MATCH CENTER</span><h2>ম্যাচ ফিক্সচার</h2><p>তারিখ, সময়, ভেন্যু ও ম্যাচের ফলাফল</p></div><select id="fixtureFilter"><option value="all">সব গ্রুপ</option></select></div>
+  <div id="fixtureList" class="fixture-list"></div>
+</div></section>
+
+<section class="section wrap" id="knockout">
+  <div class="section-head"><div><span class="tag">ROAD TO THE FINAL</span><h2>নকআউট পর্ব</h2><p>বিশ্বকাপ ২০২২-এর ধাঁচে চ্যাম্পিয়ন হওয়ার লড়াই</p></div></div>
+  <div class="knockout-scroll"><div class="bracket" id="bracket"></div></div>
+</section>
+
+<section class="section poster-section"><div class="wrap poster-grid"><div><span class="tag">SHARE THE EXCITEMENT</span><h2>ম্যাচ পোস্টার তৈরি করুন</h2><p>দুই দলের নাম, লোগো, ম্যাচের তারিখ, সময় ও ভেন্যু দিয়ে পোস্টার তৈরি করে ডাউনলোড করুন।</p><a class="outline-btn" href="#admin">অ্যাডমিন প্যানেলে যান ↗</a></div><div class="poster-preview"><div class="poster-top">MIRZANAGAR · 2026</div><div class="poster-vs"><div><span class="crest">⚽</span><b>TEAM A</b></div><strong>VS</strong><div><span class="crest">⚽</span><b>TEAM B</b></div></div><div class="poster-bottom">MATCH DAY · DATE · TIME · VENUE</div></div></div></section>
+
+<section class="section admin-section" id="admin"><div class="wrap">
+  <div class="section-head"><div><span class="tag">CONTROL ROOM</span><h2>অ্যাডমিন প্যানেল</h2><p>দল, ম্যাচ, স্কোর ও পোস্টার নিয়ন্ত্রণ করুন</p></div></div>
+  <div class="admin-box" id="adminLogin"><div class="lock">🔐</div><h3>অ্যাডমিন লগইন</h3><p>শুধু টুর্নামেন্ট পরিচালকের জন্য</p><form id="loginForm"><input id="adminEmail" type="email" placeholder="অ্যাডমিন ইমেইল" required><input id="adminPassword" type="password" placeholder="পাসওয়ার্ড" required><button class="gold-btn" type="submit">লগইন করুন</button></form><small id="loginHint">প্রথমবার চালাতে Supabase সেটআপ গাইড দেখুন। ডেমো মোডে পাসওয়ার্ড: admin123</small><div id="loginError" class="error"></div></div>
+  <div class="admin-panel hidden" id="adminPanel">
+    <div class="admin-toolbar"><b>টুর্নামেন্ট কন্ট্রোল</b><div><span id="modeLabel" class="mode-label">DEMO MODE</span><button id="logoutBtn" class="small-btn">লগআউট</button></div></div>
+    <div class="tabs"><button class="tab active" data-tab="teamsTab">দল ব্যবস্থাপনা</button><button class="tab" data-tab="matchesTab">ম্যাচ ও স্কোর</button><button class="tab" data-tab="posterTab">পোস্টার তৈরি</button></div>
+    <div id="teamsTab" class="tab-pane"><div class="admin-help">দলের নাম ও লোগোর URL পরিবর্তন করুন। প্রতিটি গ্রুপে ৪টি দল রাখুন।</div><div class="team-editor" id="teamEditor"></div><button id="saveTeams" class="gold-btn">দলের তথ্য সংরক্ষণ</button></div>
+    <div id="matchesTab" class="tab-pane hidden"><div class="admin-help">ম্যাচের তারিখ, সময়, ভেন্যু ও স্কোর আপডেট করুন।</div><div id="matchEditor" class="match-editor"></div><button id="saveMatches" class="gold-btn">ম্যাচের তথ্য সংরক্ষণ</button></div>
+    <div id="posterTab" class="tab-pane hidden"><div class="poster-form"><label>প্রথম দল<select id="posterTeam1"></select></label><label>দ্বিতীয় দল<select id="posterTeam2"></select></label><label>তারিখ<input id="posterDate" type="date"></label><label>সময়<input id="posterTime" type="time"></label><label>ভেন্যু<input id="posterVenue" placeholder="যেমন: মির্জানগর মাঠ"></label><button id="makePoster" class="gold-btn">পোস্টার তৈরি ও ডাউনলোড</button></div><canvas id="posterCanvas" width="1080" height="1350"></canvas></div>
+  </div>
+</div></section>
+</main>
+<footer><img src="assets/club-logo.jpg" alt="MSC"><p>মৌলভী মোঃ মিছির আলী স্মৃতি ফুটবল টুর্নামেন্ট — ২০২৬</p><small>আয়োজনে: মির্জানগর স্পোর্টিং ক্লাব · সৌজন্যে: মৌলভী মো: মিছির আলী ইসলামী পাঠাগার ও সমাজ কল্যাণ পরিষদ</small><span>© 2026 MIRZANAGAR SPORTING CLUB</span></footer>
+<div class="toast" id="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script><script src="app.js"></script>
+</body></html>
